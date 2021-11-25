@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    body{
+        margin: 0;
+        font-family: 'Outfit', sans-serif;
+        font-size: 14px;
+    }
+    button {
+        background: SteelBlue;
+        color: white;
+        display: block;
+        border: none;
+        padding: 15px 0;
+        width: 200px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        font-family: 'Outfit', sans-serif;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+    .wrapper {
+        padding: 15px;
+    }
+    .location {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    a.map {
+        background: MediumSeaGreen;
+        display: none;
+        color: white;
+        border: none;
+        padding: 15px 0;
+        text-align: center;
+        width: 200px;
+        margin-top: 10px;
+        text-decoration: none;
+        margin-bottom: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .camera {
+        background: SteelBlue;
+        display:  block;
+        color: white;
+        border: none;
+        padding: 15px 0;
+        text-align: center;
+        width: 200px;
+        margin-top: 10px;
+        text-decoration: none;
+        margin-bottom: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .camera input {
+        position: absolute;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    a.map.active {
+        display: block;
+    }

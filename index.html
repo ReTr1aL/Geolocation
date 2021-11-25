@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <button id="location">get location</button>
+        <div class="location">
+            <div>
+                <div>Долгота: <span id="latitude"></span>
+                </div> Широта: <span id="longitude"></span>
+            </div>
+            <a href="#" target="_blank" class="map">Показать на карте</a>
+        </div>
+        <label for="camera" class="camera">set camera
+            <input id="camera"  type="file" accept="video/*;capture=camcorder">
+        </label>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
