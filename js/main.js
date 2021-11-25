@@ -29,7 +29,7 @@ let locationButton = document.getElementById('location') ;
             for (var i in files) {
                 if (files.hasOwnProperty(i)) {
                     name = 'file' + i;
-                    reader[i] = new FileReader();
+                    reader.push(new FileReader());
                     reader[i].readAsDataURL(event.target.files[i]);
                     images.innerHTML += '<img id="'+ name +'" src="" />';
                     (function (name) {
