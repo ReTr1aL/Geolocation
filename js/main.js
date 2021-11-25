@@ -20,3 +20,22 @@ let locationButton = document.getElementById('location') ;
                 alert( 'Геолокация пока не поддерживается для этой версии браузера / ОС.' );
              }
         })
+        document.getElementById('camera').onchange = function (event) {
+            var files = event.target.files || event.currentTarget.files;
+            var reader = [];
+            var images = document.getElementById('picField');
+            var name;
+            for (var i in files) {
+                if (files.hasOwnProperty(i)) {
+                    name = 'file' + i;
+                    reader[i] = new FileReader();
+                    reader[i].readAsDataURL(event.target.files[i]);
+                    images.innerHTML += '<img id="'+ name +'" src="" />';
+                    (function (name) {
+                        reader[i].onload = function (e) {
+                            document.getElementById(name).src = e.target.result;
+                        };
+                    })(name);
+                }
+            }
+        }

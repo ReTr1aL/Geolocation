@@ -61,3 +61,10 @@
     a.map.active {
         display: block;
     }
+    #picField img{
+        width: 150px;
+        border: 1px solid gray;
+        height: 150px;
+        margin-right: 20px;
+        object-fit: contain;
+    }
