@@ -20,10 +20,11 @@ let locationButton = document.getElementById('location') ;
                 alert( 'Геолокация пока не поддерживается для этой версии браузера / ОС.' );
              }
         })
-        document.getElementById('camera').onchange = function (event) {
-            var files = event.target.files || event.currentTarget.files;
+        function change (event) {
+            files = event.target.files || event.currentTarget.files;
             var reader = [];
             var images = document.getElementById('picField');
+            images.innerHTML = '';
             var name;
             for (var i in files) {
                 if (files.hasOwnProperty(i)) {
@@ -39,3 +40,4 @@ let locationButton = document.getElementById('location') ;
                 }
             }
         }
+        document.getElementById('camera').onchange = change
